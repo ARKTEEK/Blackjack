@@ -60,7 +60,6 @@ function drawCards() {
 
     document.getElementById("hit").addEventListener("click", hit);
     document.getElementById("stay").addEventListener("click", stay);
-    document.getElementById("restart").addEventListener("click", restart);
 }
 
 function stay() {
@@ -68,9 +67,7 @@ function stay() {
     stayed = true;
     checkGame();
     document.getElementById("dealer-cards-sum").innerText = dealerCardsSum;
-    document.getElementById("player-cards-sum").innerText = playerCardsSum;
-    document.getElementById("restart").classList.remove("hidden");
-    
+    document.getElementById("player-cards-sum").innerText = playerCardsSum;    
 }
 
 function restart() {

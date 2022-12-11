@@ -1,25 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
 body {
     text-align: center;
-    background-image: url("./background.jpg")
+    background-image: url("../background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#container {
+    display: flex;
+    justify-content: center;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
 }
 
 #dealer-cards img, #player-cards img {
-    height: 175px;
-    width: 125px;
+    height: 315px;
+    width: 205px;
     margin: 1px;
+    backdrop-filter: blur(16px) saturate(200%);
+    -webkit-backdrop-filter: blur(16px) saturate(200%);
+    background-color: rgba(17, 25, 40, 0.4);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
 }
 
-#hit, #stay, #restart {
-    width: 100px;
+#hidden-card {
+    background-color: aliceblue;
+}
+
+#hit, #stay {
+    width: 130px;
     height: 50px;
     font-size: 20px;
+
+    backdrop-filter: blur(16px) saturate(200%);
+    -webkit-backdrop-filter: blur(16px) saturate(200%);
+    background-color: rgba(17, 25, 40, 0.4);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+    color: black;
 }
 
 h2, #result, #player-cards-sum, #dealer-cards-sum {
     color: white;
-    font-size: 25px;
-}
-
-.hidden {
-    display: none;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    color: black;
 }
