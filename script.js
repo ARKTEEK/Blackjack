@@ -65,9 +65,9 @@ function drawCards() {
 function stay() {
     document.getElementById("hidden_card").src = "./cards/" + hiddenCard + ".png";
     stayed = true;
-    checkGame();
     document.getElementById("dealer-cards-sum").innerText = dealerCardsSum;
-    document.getElementById("player-cards-sum").innerText = playerCardsSum;    
+    document.getElementById("player-cards-sum").innerText = playerCardsSum;
+    checkGame();
 }
 
 function restart() {
@@ -91,7 +91,14 @@ function checkGame() {
     }
 
     document.getElementById("result").innerText = gameResult;
+    setTimeout(function() { alertClick(gameResult) }, 500);
+}
 
+function alertClick(gameResult) {
+    var alertButton = confirm("YOU " + gameResult + "\nPlay again?");
+    if (alertButton == true) {
+        restart();
+    }
 }
 
 function hit() {
