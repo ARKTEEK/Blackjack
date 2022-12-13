@@ -48,6 +48,7 @@ body {
     text-decoration: none;
     font-family: 'Open Sans', sans-serif;
     color: black;
+    font-weight: bold;
 }
 
 h2, #result, #player-cards-sum, #dealer-cards-sum {

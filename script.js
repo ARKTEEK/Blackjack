@@ -65,8 +65,6 @@ function drawCards() {
 function stay() {
     document.getElementById("hidden_card").src = "./cards/" + hiddenCard + ".png";
     stayed = true;
-    document.getElementById("dealer-cards-sum").innerText = dealerCardsSum;
-    document.getElementById("player-cards-sum").innerText = playerCardsSum;
     checkGame();
 }
 
